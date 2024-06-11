@@ -17,6 +17,10 @@ const config = {
         '2xl': '1400px',
       },
     },
+    screens: {
+      md: '768px',
+      lg: '1024px',
+    },
     extend: {
       colors: {
         border: 'hsl(var(--border))',
@@ -60,9 +64,9 @@ const config = {
         },
       },
       fontFamily: {
-        barlow: 'var(--font-barlow)',
-        'barlow-condensed': 'var(--font-barlow-condensed)',
-        bellefair: 'var(--font-bellefair)',
+        barlow: ['var(--font-barlow)'],
+        'barlow-condensed': ['var(--font-barlow-condensed)'],
+        bellefair: ['var(--font-bellefair)'],
       },
       fontSize: {
         xs: '14px',
@@ -92,6 +96,14 @@ const config = {
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+      },
+      backgroundImage: {
+        'home-desktop': "url('/home/background-home-desktop.jpg')",
+        'home-tablet': "url('/home/background-home-tablet.jpg')",
+        'home-mobile': "url('/home/background-home-mobile.jpg')",
+      },
+      spacing: {
+        '22': '5.5rem',
       },
     },
   },

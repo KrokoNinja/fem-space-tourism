@@ -6,14 +6,14 @@ import Navbar from '@/components/Navbar';
 const barlow = Barlow({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['400'],
+  weight: ['400', '700'],
   variable: '--font-barlow',
 });
 
 const barlowCondensed = Barlow_Condensed({
   subsets: ['latin'],
   display: 'swap',
-  weight: ['400'],
+  weight: ['400', '700'],
   variable: '--font-barlow-condensed',
 });
 
@@ -35,10 +35,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${barlow.className} h-[100vh]`}>
+    <html
+      lang="en"
+      className={`${barlow.variable} ${barlowCondensed.variable} ${bellefair.variable}`}>
+      <body className="h-[100vh] bg-home-mobile bg-cover md:bg-home-tablet lg:bg-home-desktop">
         <Navbar />
-        {children}
+        <main className="pt-22">{children}</main>
       </body>
     </html>
   );
