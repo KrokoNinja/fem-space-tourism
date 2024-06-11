@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Barlow, Bellefair, Barlow_Condensed } from 'next/font/google';
 import './globals.css';
+import Navbar from '@/components/Navbar';
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -35,7 +36,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={barlow.className}>{children}</body>
+      <body className={`${barlow.className} h-[100vh]`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
