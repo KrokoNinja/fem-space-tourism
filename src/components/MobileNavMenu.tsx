@@ -10,7 +10,7 @@ const MobileNavMenu = () => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button className="bg-transparent p-0">
+        <Button className="bg-transparent p-0 md:hidden">
           <img src="/shared/icon-hamburger.svg" alt="Hamburger icon" />
         </Button>
       </SheetTrigger>

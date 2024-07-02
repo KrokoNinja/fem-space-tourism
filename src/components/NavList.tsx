@@ -24,39 +24,47 @@ function NavList({ setOpen }: { setOpen: (open: boolean) => void }) {
   }, [path]);
 
   return (
-    <ul className="flex flex-col gap-8">
-      <li
-        className={cn('flex items-center gap-x-3', {
-          'border-r-[3px]': activePage === 'home',
-        })}>
-        <Link href="/" onClick={() => setOpen(false)}>
-          <span className="font-bold tracking-[2.7px]">00</span>
+    <ul className="flex flex-col gap-8 md:gap-12 md:flex-row">
+      <li>
+        <Link
+          href="/"
+          onClick={() => setOpen(false)}
+          className={cn('nav-item', {
+            'active-nav-item': activePage === 'home',
+          })}>
+          <span className="navigation-number">00</span>
           Home
         </Link>
       </li>
-      <li
-        className={cn('flex items-center gap-x-3', {
-          'border-r-[3px]': activePage === 'destination',
-        })}>
-        <Link href="/destination" onClick={() => setOpen(false)}>
-          <span className="font-bold tracking-[2.7px]">01</span>
+      <li>
+        <Link
+          href="/destination"
+          onClick={() => setOpen(false)}
+          className={cn('nav-item', {
+            'active-nav-item': activePage === 'destination',
+          })}>
+          <span className="navigation-number">01</span>
           Destination
         </Link>
       </li>
-      <li
-        className={cn('flex items-center gap-x-3', {
-          'border-r-[3px]': activePage === 'crew',
-        })}>
-        <Link href="/crew" onClick={() => setOpen(false)}>
-          <span className="font-bold tracking-[2.7px]">02</span>Crew
+      <li>
+        <Link
+          href="/crew"
+          onClick={() => setOpen(false)}
+          className={cn('nav-item', {
+            'active-nav-item': activePage === 'crew',
+          })}>
+          <span className="navigation-number">02</span>Crew
         </Link>
       </li>
-      <li
-        className={cn('flex items-center gap-x-3', {
-          'border-r-[3px]': activePage === 'tech',
-        })}>
-        <Link href="/technology" onClick={() => setOpen(false)}>
-          <span className="font-bold tracking-[2.7px]">03</span>Technology
+      <li>
+        <Link
+          href="/technology"
+          onClick={() => setOpen(false)}
+          className={cn('nav-item', {
+            'active-nav-item': activePage === 'tech',
+          })}>
+          <span className="navigation-number">03</span>Technology
         </Link>
       </li>
     </ul>
