@@ -74,3 +74,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.nav-item {
+  @apply flex items-center gap-x-3 hover:border-r-[3px] hover:md:border-b-[3px] hover:border-white/50;
+}
+
+.active-nav-item {
+  @apply border-r-[3px] md:border-r-0 md:border-b-[3px] border-white hover:border-white;
+}

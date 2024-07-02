@@ -14,7 +14,7 @@ export default function Home() {
         experience!
       </p>
       <div className="flex justify-center items-center w-full py-[7.5rem]">
-        <Button className="h-36 w-36 rounded-full bg-white text-dark font-bellefair uppercase text-[18px] focus:bg-white active:bg-white active:ring-white/10 active:ring-[88px] hover:ring-white/10 hover:ring-[88px] focus:ring-white/10 focus:ring-[88px]">
+        <Button className="h-36 w-36 rounded-full bg-white text-dark font-bellefair uppercase text-[18px] ring-[88px] ring-white/10 md:ring-0 md:hover:ring-[88px] md:active:ring-[88px] md:focus:ring-[88px] active:bg-white focus:bg-white hover:bg-white">
           Explore
         </Button>
       </div>
