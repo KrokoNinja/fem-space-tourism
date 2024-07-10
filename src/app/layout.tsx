@@ -36,12 +36,14 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${barlow.variable} ${barlowCondensed.variable} ${bellefair.variable}`}>
+      lang='en'
+      className={`${barlow.variable} ${barlowCondensed.variable} ${bellefair.variable}`}
+    >
       <body
-        className={`font-barlow h-[100vh] bg-home-mobile bg-cover bg-no-repeat md:bg-home-tablet lg:bg-home-desktop`}>
+        className={`h-[100vh] bg-home-mobile bg-cover bg-no-repeat font-barlow md:bg-home-tablet lg:bg-home-desktop`}
+      >
         <Navbar />
-        <main className="pt-22 h-full">{children}</main>
+        <main className='h-full pt-22'>{children}</main>
       </body>
     </html>
   );

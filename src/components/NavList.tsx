@@ -24,47 +24,51 @@ function NavList({ setOpen }: { setOpen: (open: boolean) => void }) {
   }, [path]);
 
   return (
-    <ul className="flex flex-col gap-8 md:gap-12 md:flex-row">
+    <ul className='flex flex-col gap-8 md:flex-row md:gap-12'>
       <li>
         <Link
-          href="/"
+          href='/'
           onClick={() => setOpen(false)}
           className={cn('nav-item', {
             'active-nav-item': activePage === 'home',
-          })}>
-          <span className="navigation-number">00</span>
+          })}
+        >
+          <span className='navigation-number'>00</span>
           Home
         </Link>
       </li>
       <li>
         <Link
-          href="/destination"
+          href='/destination'
           onClick={() => setOpen(false)}
           className={cn('nav-item', {
             'active-nav-item': activePage === 'destination',
-          })}>
-          <span className="navigation-number">01</span>
+          })}
+        >
+          <span className='navigation-number'>01</span>
           Destination
         </Link>
       </li>
       <li>
         <Link
-          href="/crew"
+          href='/crew'
           onClick={() => setOpen(false)}
           className={cn('nav-item', {
             'active-nav-item': activePage === 'crew',
-          })}>
-          <span className="navigation-number">02</span>Crew
+          })}
+        >
+          <span className='navigation-number'>02</span>Crew
         </Link>
       </li>
       <li>
         <Link
-          href="/technology"
+          href='/technology'
           onClick={() => setOpen(false)}
           className={cn('nav-item', {
             'active-nav-item': activePage === 'tech',
-          })}>
-          <span className="navigation-number">03</span>Technology
+          })}
+        >
+          <span className='navigation-number'>03</span>Technology
         </Link>
       </li>
     </ul>
