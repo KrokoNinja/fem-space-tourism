@@ -1,5 +1,6 @@
+import DestinationImage from '@/components/DestinationImage';
 import DestinationInfo from '@/components/DestinationInfo';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const Page = () => {
   return (
@@ -10,26 +11,10 @@ const Page = () => {
       </div>
       <div>
         <Tabs defaultValue='moon'>
-          <TabsContent value='moon'>
-            <div className='px-22 py-7'>
-              <img src='/destination/image-moon.webp' alt='Moon Image' />
-            </div>
-          </TabsContent>
-          <TabsContent value='mars'>
-            <div className='px-22 py-7'>
-              <img src='/destination/image-mars.webp' alt='Mars Image' />
-            </div>
-          </TabsContent>
-          <TabsContent value='europa'>
-            <div className='px-22 py-7'>
-              <img src='/destination/image-europa.webp' alt='Europa Image' />
-            </div>
-          </TabsContent>
-          <TabsContent value='titan'>
-            <div className='px-22 py-7'>
-              <img src='/destination/image-titan.webp' alt='Titan Image' />
-            </div>
-          </TabsContent>
+          <DestinationImage destination='moon' />
+          <DestinationImage destination='mars' />
+          <DestinationImage destination='europa' />
+          <DestinationImage destination='titan' />
           <TabsList>
             <TabsTrigger value='moon'>Moon</TabsTrigger>
             <TabsTrigger value='mars'>Mars</TabsTrigger>
