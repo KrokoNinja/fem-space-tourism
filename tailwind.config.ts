@@ -101,6 +101,12 @@ const config = {
         'home-desktop': "url('/home/background-home-desktop.jpg')",
         'home-tablet': "url('/home/background-home-tablet.jpg')",
         'home-mobile': "url('/home/background-home-mobile.jpg')",
+        'destination-desktop':
+          "url('/destination/background-destination-desktop.jpg')",
+        'destination-tablet':
+          "url('/destination/background-destination-tablet.jpg')",
+        'destination-mobile':
+          "url('/destination/background-destination-mobile.jpg')",
       },
       spacing: {
         '22': '5.5rem',

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Barlow, Bellefair, Barlow_Condensed } from 'next/font/google';
-import './globals.css';
+import '../globals.css';
 import Navbar from '@/components/Navbar';
 
 const barlow = Barlow({
@@ -40,7 +40,7 @@ export default function RootLayout({
       className={`${barlow.variable} ${barlowCondensed.variable} ${bellefair.variable}`}
     >
       <body
-        className={`h-[100vh] bg-home-mobile bg-cover bg-no-repeat font-barlow md:bg-home-tablet lg:bg-home-desktop`}
+        className={`bg-destination-mobile md:bg-destination-tablet lg:bg-destination-desktop h-[100vh] bg-cover bg-no-repeat font-barlow`}
       >
         <Navbar />
         <main className='h-full pt-22'>{children}</main>
