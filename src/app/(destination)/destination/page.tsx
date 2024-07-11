@@ -5,8 +5,8 @@ import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 const Page = () => {
   return (
     <section className='p-6 text-white'>
-      <div>
-        <span>01</span>
+      <div className='flex justify-center gap-6 font-barlow-condensed uppercase tracking-[2px]'>
+        <span className='text-white/25'>01</span>
         Pick your destination
       </div>
       <div>
