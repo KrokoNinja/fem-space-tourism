@@ -6,7 +6,7 @@ const NavMenu = () => {
   const [open, setOpen] = useState(true);
 
   return (
-    <nav className='hidden h-full w-full justify-end bg-white/5 px-10 pt-9 font-barlow-condensed uppercase md:flex lg:max-w-[51%]'>
+    <nav className='primary-navigation hidden h-full justify-end bg-white/5 px-10 pt-9 font-barlow-condensed uppercase backdrop-blur-3xl md:flex'>
       <NavList setOpen={setOpen} />
     </nav>
   );

@@ -10,12 +10,12 @@ const MobileNavMenu = () => {
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
-        <Button className="bg-transparent p-0 md:hidden">
-          <img src="/shared/icon-hamburger.svg" alt="Hamburger icon" />
+        <Button className='m-6 bg-transparent md:hidden'>
+          <img src='/shared/icon-hamburger.svg' alt='Hamburger icon' />
         </Button>
       </SheetTrigger>
-      <SheetContent className="border-none text-white bg-dark/15 backdrop-blur-[80px]">
-        <div className="pl-2 pt-12 uppercase font-barlow-condensed">
+      <SheetContent className='border-none bg-dark/15 text-white backdrop-blur-[80px]'>
+        <div className='pl-2 pt-12 font-barlow-condensed uppercase'>
           <NavList setOpen={setOpen} />
         </div>
       </SheetContent>

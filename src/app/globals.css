@@ -76,7 +76,7 @@
 }
 
 .nav-item {
-  @apply flex items-center gap-x-3 pb-9 hover:border-r-[3px] hover:border-white/50 hover:md:border-b-[3px] hover:md:border-r-0;
+  @apply flex items-center gap-x-3 hover:border-r-[3px] hover:border-white/50 md:pb-9 hover:md:border-b-[3px] hover:md:border-r-0;
 }
 
 .active-nav-item {
@@ -85,4 +85,9 @@
 
 .navigation-number {
   @apply font-bold tracking-[2.7px];
+}
+
+.primary-navigation {
+  padding-inline-end: 4rem;
+  padding-inline-start: clamp(10rem, 5vw, 24rem);
 }
