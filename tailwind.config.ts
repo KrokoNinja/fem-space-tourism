@@ -73,6 +73,7 @@ const config = {
         xs: '14px',
         sm: '16px',
         base: '18px',
+        md: '20px',
         lg: '28px',
         xl: '32px',
         '2xl': '56px',
