@@ -1,14 +1,12 @@
 import DestinationImage from '@/components/DestinationImage';
 import DestinationInfo from '@/components/DestinationInfo';
+import Heading from '@/components/Heading';
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const Page = () => {
   return (
     <section className='p-6 text-white md:p-10 md:text-md lg:px-40 lg:py-12'>
-      <div className='flex justify-center gap-6 font-barlow-condensed uppercase tracking-[2px] md:mb-6 md:justify-start lg:text-lg'>
-        <span className='text-white/25'>01</span>
-        Pick your destination
-      </div>
+      <Heading number='01' text='Choose your destination' />
       <div>
         <Tabs defaultValue='moon' className='lg:flex'>
           <div className='lg:flex lg:flex-1'>
