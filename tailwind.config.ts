@@ -109,6 +109,9 @@ const config = {
           "url('/destination/background-destination-tablet.jpg')",
         'destination-mobile':
           "url('/destination/background-destination-mobile.jpg')",
+        'crew-desktop': "url('/crew/background-crew-desktop.jpg')",
+        'crew-tablet': "url('/crew/background-crew-tablet.jpg')",
+        'crew-mobile': "url('/crew/background-crew-mobile.jpg')",
       },
       spacing: {
         '22': '5.5rem',
