@@ -21,7 +21,7 @@ const Page = () => {
             <DestinationImage destination='titan' />
           </div>
           <div className='lg:flex lg:flex-1 lg:flex-col lg:gap-y-10 lg:px-12 lg:py-32'>
-            <TabsList>
+            <TabsList className='gap-8 lg:justify-start'>
               <TabsTrigger
                 value='moon'
                 className={`border-b-[3px] border-transparent pb-4 ${active == 'moon' ? 'border-white' : 'hover:border-white/50'}`}
