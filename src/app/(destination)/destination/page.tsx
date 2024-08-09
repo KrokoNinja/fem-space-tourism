@@ -9,7 +9,7 @@ const Page = () => {
       <Heading number='01' text='Choose your destination' />
       <div>
         <Tabs defaultValue='moon' className='lg:flex'>
-          <div className='lg:flex lg:flex-1'>
+          <div className='lg:flex lg:w-full lg:flex-1'>
             <DestinationImage destination='moon' />
             <DestinationImage destination='mars' />
             <DestinationImage destination='europa' />
