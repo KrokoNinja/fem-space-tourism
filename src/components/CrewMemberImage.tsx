@@ -3,10 +3,6 @@ import { TabsContent } from './ui/tabs';
 import { AspectRatio } from './ui/aspect-ratio';
 
 const CrewMemberImage = ({ member }: { member: string }) => {
-  {
-    /*Aspect Ratio in member info const aufnehmen und infos wie pfad, alt, und ratio aus const holen */
-  }
-
   return (
     <TabsContent value={member} className='w-full'>
       <div className='flex items-end justify-center px-7 lg:px-0 lg:py-7'>

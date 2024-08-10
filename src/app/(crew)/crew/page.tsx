@@ -10,15 +10,15 @@ const Crew = () => {
   const [active, setActive] = useState<string>('douglas-hurley');
 
   return (
-    <section className='h-full p-6 text-white md:p-10 md:text-md lg:flex lg:flex-col lg:px-40 lg:py-12'>
+    <section className='p-6 text-white md:p-10 md:text-md lg:flex lg:flex-col lg:px-40 lg:py-12'>
       <Heading number='02' text='Meet your crew' />
       <Tabs
         defaultValue='douglas-hurley'
         value={active}
         className='h-full items-center lg:flex lg:gap-x-8'
       >
-        <div className='mb-8'>
-          <div className='mt-16 md:px-22 lg:px-0'>
+        <div className='mb-8 lg:h-full'>
+          <div className='mt-16 md:px-22 lg:h-full lg:px-0'>
             <CrewMemberInfo member={'douglas-hurley'} />
             <CrewMemberInfo member={'mark-shuttleworth'} />
             <CrewMemberInfo member={'victor-glover'} />

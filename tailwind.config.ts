@@ -112,6 +112,9 @@ const config = {
         'crew-desktop': "url('/crew/background-crew-desktop.jpg')",
         'crew-tablet': "url('/crew/background-crew-tablet.jpg')",
         'crew-mobile': "url('/crew/background-crew-mobile.jpg')",
+        'tech-desktop': "url('/technology/background-technology-desktop.jpg')",
+        'tech-tablet': "url('/technology/background-technology-tablet.jpg')",
+        'tech-mobile': "url('/technology/background-technology-mobile.jpg')",
       },
       spacing: {
         '22': '5.5rem',
