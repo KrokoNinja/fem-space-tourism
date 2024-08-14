@@ -11,10 +11,10 @@ export default function Home() {
           Space
         </h1>
         <p className='px-2 text-[15px] leading-7 text-light lg:px-0 lg:pr-22'>
-          Let's face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we'll give you a truly out of this world
-          experience!
+          Let&apos;s face it; if you want to go to space, you might as well
+          genuinely go to outer space and not hover kind of on the edge of it.
+          Well sit back, and relax because we&apos;ll give you a truly out of
+          this world experience!
         </p>
       </div>
       <div className='flex w-full items-center justify-center py-[7.5rem] md:px-22 md:py-16 lg:flex-1 lg:justify-end lg:px-0 lg:py-8'>

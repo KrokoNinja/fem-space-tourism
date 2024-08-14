@@ -5,6 +5,7 @@ import * as SheetPrimitive from '@radix-ui/react-dialog';
 import { cva, type VariantProps } from 'class-variance-authority';
 
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
 
 const Sheet = SheetPrimitive.Root;
 
@@ -21,7 +22,7 @@ const SheetOverlay = React.forwardRef<
   <SheetPrimitive.Overlay
     className={cn(
       'fixed inset-0 z-50 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
-      className
+      className,
     )}
     {...props}
     ref={ref}
@@ -45,7 +46,7 @@ const sheetVariants = cva(
     defaultVariants: {
       side: 'right',
     },
-  }
+  },
 );
 
 interface SheetContentProps
@@ -61,15 +62,17 @@ const SheetContent = React.forwardRef<
     <SheetPrimitive.Content
       ref={ref}
       className={cn(sheetVariants({ side }), className)}
-      {...props}>
-      <div className="w-full h-10 flex justify-end items-center pr-6">
-        <SheetPrimitive.Close className="h-6 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
-          <img
-            src="/shared/icon-close.svg"
-            alt="Close icon"
-            className="w-6 h-6"
+      {...props}
+    >
+      <div className='flex h-10 w-full items-center justify-end pr-6'>
+        <SheetPrimitive.Close className='h-6 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary'>
+          <Image
+            src='/shared/icon-close.svg'
+            alt='Close icon'
+            width={24}
+            height={24}
           />
-          <span className="sr-only">Close</span>
+          <span className='sr-only'>Close</span>
         </SheetPrimitive.Close>
       </div>
       {children}
@@ -84,8 +87,8 @@ const SheetHeader = ({
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div
     className={cn(
-      'flex flex-col space-y-2 text-center sm:text-left',
-      className
+      'sm:text-left flex flex-col space-y-2 text-center',
+      className,
     )}
     {...props}
   />
@@ -98,8 +101,8 @@ const SheetFooter = ({
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div
     className={cn(
-      'flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2',
-      className
+      'sm:flex-row sm:justify-end sm:space-x-2 flex flex-col-reverse',
+      className,
     )}
     {...props}
   />
