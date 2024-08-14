@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const Page = () => {
   return (
-    <section className='p-6 text-white'>
+    <section className='p-6 text-white md:p-10'>
       <Heading number='03' text='Space launch 101' />
       <Tabs defaultValue='1' className='mt-6 pt-16'>
         <TechImage value='launch-vehicle' />
