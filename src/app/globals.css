@@ -91,3 +91,8 @@
   padding-inline-end: 4rem;
   padding-inline-start: clamp(10rem, 5vw, 24rem);
 }
+
+.custom-filter {
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+}
