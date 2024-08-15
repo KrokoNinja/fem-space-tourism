@@ -20,7 +20,7 @@ const MobileNavMenu = () => {
           />
         </Button>
       </SheetTrigger>
-      <SheetContent className='custom-filter border-none bg-dark/15 text-white backdrop-blur-3xl'>
+      <SheetContent className='custom-filter border-none bg-dark/15 text-white'>
         <div className='ml-2 mt-12 font-barlow-condensed uppercase'>
           <NavList setOpen={setOpen} />
         </div>
