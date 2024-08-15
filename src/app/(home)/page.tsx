@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
-    <section className='flex flex-col p-6 text-center text-white md:px-10 md:py-32 lg:flex-row lg:gap-8 lg:px-[165px] lg:text-left'>
+    <section className='flex flex-col p-6 text-center text-white md:px-10 md:py-32 lg:h-full lg:flex-row lg:items-center lg:gap-8 lg:px-[165px] lg:text-left'>
       <div className='flex flex-col md:px-22 lg:flex-1 lg:justify-start lg:px-0'>
         <p className='font-barlow-condensed uppercase tracking-widest text-light md:text-lg'>
           So, you want to travel to

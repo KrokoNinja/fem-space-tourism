@@ -40,14 +40,8 @@ export default function RootLayout({
       lang='en'
       className={`${barlow.variable} ${barlowCondensed.variable} ${bellefair.variable}`}
     >
-      <Head>
-        <meta
-          name='viewport'
-          content='initial-scale=1, width=device-width, viewport-fit=cover'
-        />
-      </Head>
       <body
-        className={`bg-home-mobile bg-cover bg-no-repeat font-barlow md:bg-home-tablet lg:bg-home-desktop`}
+        className={`bg-home-mobile bg-cover bg-no-repeat font-barlow md:bg-home-tablet lg:h-screen lg:bg-home-desktop`}
       >
         <Navbar />
         <main className='h-full pt-22'>{children}</main>

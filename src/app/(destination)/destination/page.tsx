@@ -10,7 +10,7 @@ const Page = () => {
   const [active, setActive] = useState('moon');
 
   return (
-    <section className='p-6 text-white md:p-10 md:text-md lg:px-40 lg:py-12'>
+    <section className='p-6 text-white md:p-10 md:text-md lg:px-40 lg:py-0'>
       <Heading number='01' text='Choose your destination' />
       <div>
         <Tabs defaultValue='moon' className='lg:flex'>

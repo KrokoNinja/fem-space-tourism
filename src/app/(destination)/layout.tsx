@@ -40,10 +40,10 @@ export default function RootLayout({
       className={`${barlow.variable} ${barlowCondensed.variable} ${bellefair.variable}`}
     >
       <body
-        className={`bg-destination-mobile bg-cover bg-no-repeat font-barlow md:bg-destination-tablet lg:bg-destination-desktop`}
+        className={`bg-destination-mobile bg-cover bg-no-repeat font-barlow md:bg-destination-tablet lg:h-screen lg:bg-destination-desktop`}
       >
         <Navbar />
-        <main className='h-full pt-22 lg:mt-10'>{children}</main>
+        <main className='h-full pt-22 lg:pt-36'>{children}</main>
       </body>
     </html>
   );
